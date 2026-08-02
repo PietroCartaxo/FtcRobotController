@@ -1,3 +1,7 @@
+//Ligar o motor em exatamente uma rotação :
+//Mudando o modo do motor e usando suas funções;
+//Treina: Modo RUN_TO_POSITION
+
 package org.firstinspires.ftc.teamcode.Motores.ComEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;

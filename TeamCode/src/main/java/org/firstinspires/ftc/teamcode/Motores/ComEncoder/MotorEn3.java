@@ -1,3 +1,7 @@
+//Um botão move o motor para uma posição e volta para a inicial :
+//Pressionar A para target position e voltar ao ponto zero
+//Treina: Controle sequencial
+
 package org.firstinspires.ftc.teamcode.Motores.ComEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;

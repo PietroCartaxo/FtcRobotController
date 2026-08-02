@@ -1,6 +1,7 @@
-//DESAFIO 2 MOTOR COM ENCODER
+//Ligar o motor em exatamente uma rotação :
+//Mudando o modo do motor e usando suas funções;
+//Treina: Modo RUN_TO_POSITION
 
-//Package e Imports
 package org.firstinspires.ftc.teamcode.Motores.ComEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
