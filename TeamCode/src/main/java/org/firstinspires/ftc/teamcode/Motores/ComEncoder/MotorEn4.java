@@ -5,17 +5,20 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp()
-public class MotorEn3 extends OpMode {
-    private DcMotor motorEn3;
+public class MotorEn4 extends OpMode {
+
+    private DcMotor motorEn4;
     private double ticks = 537.7;
     private double newTarget;
+
     private boolean estadoAnt = false;
 
     @Override
     public void init() {
-        motorEn3 = hardwareMap.get(DcMotor.class, "MotorEn3");
-        motorEn3.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        motorEn3.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        motorEn4 = hardwareMap.get(DcMotor.class, "MotorEn4");
+        motorEn4.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        motorEn4.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        motorEn4.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
     }
 
     @Override
@@ -23,15 +26,16 @@ public class MotorEn3 extends OpMode {
         boolean apenasPress = gamepad1.a && !estadoAnt;
 
         if (apenasPress) {
-            if (motorEn3.getTargetPosition() == 0) {
-                motorEn3.setTargetPosition((int)ticks);
-                motorEn3.setPower(0.5);
+            if (motorEn4.getTargetPosition() == 0) {
+                motorEn4.setTargetPosition((int)ticks);
+                motorEn4.setPower(0.5);
             } else {
-                motorEn3.setTargetPosition(0);
-                motorEn3.setPower(0.5);
+                motorEn4.setTargetPosition(0);
+                motorEn4.setPower(0.5);
             }
         }
 
         estadoAnt = gamepad1.a;
     }
 }
+

@@ -12,7 +12,7 @@ public class MotorEn1 extends OpMode {
 
     @Override
     public void init() {
-        motorEn1 = hardwareMap.get(DcMotor.class, "MotorEn");
+        motorEn1 = hardwareMap.get(DcMotor.class, "MotorEn1");
         motorEn1.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         motorEn1.setMode(DcMotor.RunMode.RUN_TO_POSITION);
     }
