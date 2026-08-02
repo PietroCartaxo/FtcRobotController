@@ -1,3 +1,7 @@
+//Reverse e Forward com botões :
+//Pressionar um botão que o ligue para frente (set power positivo) e outro que o ligue para trás(set power negativo);
+//Treina: Set power
+
 package org.firstinspires.ftc.teamcode.Motores.SemEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;

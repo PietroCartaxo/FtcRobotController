@@ -1,3 +1,7 @@
+//Motor com velocidade proporcional ao trigger :
+//Utilizar algum trigger para controlar a potência;
+//Treina: Gamepads e set power
+
 package org.firstinspires.ftc.teamcode.Motores.SemEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;

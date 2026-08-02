@@ -1,3 +1,7 @@
+//Ligar e desligar motor com botões :
+//Pressionar A (botão booleano) para ligar, e B para desligar;
+//Treina: Set pow
+
 package org.firstinspires.ftc.teamcode.Motores.SemEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;

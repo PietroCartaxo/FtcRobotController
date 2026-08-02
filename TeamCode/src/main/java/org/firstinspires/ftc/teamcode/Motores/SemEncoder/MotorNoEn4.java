@@ -1,3 +1,7 @@
+//Reverse e Forward com apenas um botão :
+//Um botão alterna a rotação do motor para frente e para trás;
+//Treina: Lógica booleana, funções de Forward e Reverse
+
 package org.firstinspires.ftc.teamcode.Motores.SemEncoder;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
