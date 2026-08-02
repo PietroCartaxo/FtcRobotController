@@ -36,6 +36,9 @@ public class MotorEn4 extends OpMode {
         }
 
         estadoAnt = gamepad1.a;
+        telemetry.addData("Target Pos: ", motorEn4.getTargetPosition());
+        telemetry.addData("Current Pos: ", motorEn4.getCurrentPosition());
+        telemetry.update();
     }
 }
 
