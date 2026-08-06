@@ -1,15 +1,17 @@
 //package org.firstinspires.ftc.teamcode.Servos;
 //
 //import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+//import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 //import com.qualcomm.robotcore.hardware.Servo;
 //
+//@TeleOp()
 //public class ServoD6 extends OpMode {
 //
 //    private Servo servoD6;
 //
 //    @Override
 //    public void init() {
-//        servoD6 = hardwareMap.get(Servo.class, "servod6");
+//        servoD6 = hardwareMap.get(Servo.class, "servod");
 //    }
 //
 //    @Override
