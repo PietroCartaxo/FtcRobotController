@@ -10,7 +10,7 @@ public class Dis1 extends OpMode {
 
     @Override
     public void init() {
-        dssensor = hardwareMap.get(DistanceSensor.class,"dssensor");
+        dssensor = hardwareMap.get(DistanceSensor.class,"sensor");
     }
 
     @Override

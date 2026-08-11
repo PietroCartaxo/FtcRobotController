@@ -15,7 +15,7 @@ public class Dis2 extends OpMode {
 
     @Override
     public void init() {
-        dssensor = hardwareMap.get(DistanceSensor.class,"dssensor");
+        dssensor = hardwareMap.get(DistanceSensor.class,"sensor");
         motor = hardwareMap.get(DcMotor.class, "motor");
         motor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
     }
