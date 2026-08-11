@@ -25,5 +25,7 @@ public class ToqMag2 extends OpMode {
         } else {
             motor.setPower(0.0);
         }
+        telemetry.addData("Posição: ", motor.getCurrentPosition());
+        telemetry.update();
     }
 }

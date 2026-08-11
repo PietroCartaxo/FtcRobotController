@@ -14,6 +14,6 @@ public class Analo1 extends OpMode {
 
     @Override
     public void loop() {
-        
+        telemetry.addData("Voltage: ", analosensor.getVoltage());
     }
 }

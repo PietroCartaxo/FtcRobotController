@@ -23,10 +23,11 @@ public class Dis2 extends OpMode {
     @Override
     public void loop() {
         if(dssensor.getDistance(DistanceUnit.CM) < 10){
-            motor.setTargetPosition((int) ticks);
             motor.setPower(0.5);
         } else {
             motor.setPower(0.0);
         }
+        telemetry.addData("Distance (cm)", dssensor.getDistance(DistanceUnit.CM));
+        telemetry.update();
     }
 }

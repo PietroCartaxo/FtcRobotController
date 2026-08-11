@@ -23,5 +23,6 @@ public class ToqMag1 extends OpMode {
         } else {
             servo1.setPosition(0.0);
         }
+        telemetry.addData("Posição: ", servo1.getPosition());
     }
 }

@@ -25,5 +25,7 @@ public class DIs3 extends OpMode {
     public void loop() {
         double velocidade = distance / 100.0;
         motor.setPower(velocidade);
+        telemetry.addData("Potência", motor.getPower());
+        telemetry.update();
     }
 }

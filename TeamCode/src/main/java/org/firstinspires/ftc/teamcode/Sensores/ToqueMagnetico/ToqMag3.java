@@ -22,5 +22,7 @@ public class ToqMag3 extends OpMode {
             contador++;
         }
         foiPressionadoAntes = EstadoAtual;
+        telemetry.addData("Contador", contador);
+        telemetry.update();
     }
 }
