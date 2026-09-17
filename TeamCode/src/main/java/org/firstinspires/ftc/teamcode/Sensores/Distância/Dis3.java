@@ -8,29 +8,28 @@
 //import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 //
 //@TeleOp
-//public class Dis2 extends OpMode {
+//public class Dis3 extends OpMode {
 //
 //    private DistanceSensor dssensor;
 //    private DcMotor motor;
-//    private double ticks = 537.7;
-//    private double newTarget;
 //
 //    @Override
 //    public void init() {
 //        dssensor = hardwareMap.get(DistanceSensor.class, "sensor");
 //        motor = hardwareMap.get(DcMotor.class, "motor");
 //        motor.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-//        motor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER); // <- essa linha que faltava
+//        motor.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 //    }
 //
 //    @Override
 //    public void loop() {
-//        if(dssensor.getDistance(DistanceUnit.CM) < 10){
-//            motor.setPower(0.5);
-//        } else {
-//            motor.setPower(0.0);
-//        }
-//        telemetry.addData("Distance (cm)", dssensor.getDistance(DistanceUnit.CM));
+//        double distance = dssensor.getDistance(DistanceUnit.CM);
+//        double velocidade = distance / 100.0;
+//
+//        motor.setPower(velocidade);
+//
+//        telemetry.addData("Distância (cm)", distance);
+//        telemetry.addData("Potência", motor.getPower());
 //        telemetry.update();
 //    }
 //}

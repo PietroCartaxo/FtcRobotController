@@ -1,12 +1,13 @@
 package org.firstinspires.ftc.teamcode.Sensores.ToqueMagnetico;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.TouchSensor;
 
+@TeleOp
 public class ToqMag1 extends OpMode {
 
-    // Declaração das variáveis
     private TouchSensor touch1;
     private Servo servo1;
 
@@ -14,15 +15,21 @@ public class ToqMag1 extends OpMode {
     public void init() {
         touch1 = hardwareMap.get(TouchSensor.class, "touch");
         servo1 = hardwareMap.get(Servo.class, "servo");
+
+        telemetry.addData("Status", "Inicializado");
+        telemetry.update();
     }
 
     @Override
     public void loop() {
-        if(touch1.isPressed()){
+        if (touch1.isPressed()) {
             servo1.setPosition(1.0);
         } else {
             servo1.setPosition(0.0);
         }
-        telemetry.addData("Posição: ", servo1.getPosition());
+
+        telemetry.addData("Touch pressionado", touch1.isPressed());
+        telemetry.addData("Posição do servo", servo1.getPosition());
+        telemetry.update();
     }
 }
